@@ -55,7 +55,7 @@ const Startingscreen = () => {
           {categories.map((category, index) => (
             <motion.li
               key={index}
-              className={`inline-block bg-[#606eac] opacity-70 font-bold rounded-full p-2 text-white px-4`}
+              className={`inline-block bg-[#606eac] ${(categoryfilter==category)?"opacity-100":"opacity-70"} font-bold rounded-full p-2 text-white px-4`}
               whileHover={{ scale: 1.1 }}
               transition={{ type: 'spring', stiffness: 300 }}
               onClick={(e)=>setcategoryfilter(category)}
