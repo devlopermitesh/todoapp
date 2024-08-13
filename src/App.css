@@ -1,0 +1,41 @@
+/* Add this to your CSS file or Tailwind CSS configuration */
+.scrollbar-hidden {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, and Opera */
+  }
+  /* Add this to your CSS file or Tailwind CSS configuration */
+
+      
+  html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width:10px;
+
+}
+::-webkit-scrollbar-track{
+    background:rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--famousorange),var(--famouspink), #fff, #FFFF00);
+}
+::-webkit-scrollbar-thumb:hover{
+        background: linear-gradient(135deg, #00FFFF, var(--famousorange),var(--famouspink));
+    
+}
+
+  /* styles.css */
+/* styles.css */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+  
